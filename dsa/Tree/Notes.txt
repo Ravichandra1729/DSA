@@ -1,0 +1,25 @@
+*General Tree can have multiple childrens their is No limitation
+* Binary tree needs To have atmost 2 childrens(0,1,2)
+* binary Tree divided into 5 types:
+1)Full Binary Tree:(0,2)
+	A full binary Tree will have 0 or 2 childrens,No 1 children node
+2)Complete Binary Tree:
+	A binary tree in which all the levels except last level is completely filled with Nodes or should fill from left
+	last level==>a) completely filled
+				 b) left-Right
+3)Perfect Binary Tree:
+	Type of binary tree in which all internal nodes contains 2 children and all leaf nodes 
+	are present is same level
+4) balanced Binary Tree :
+	its a binary tree in which hight of left sub tree and right sub tree is differed by atmost 1 
+	
+	difference=hight of left subtree-highet of right subtree <=1
+	hight of empty node is -1
+5) pathological Binary Tree (Degenerate binary tree )
+	where parnet node has only one child node 
+	
+Binary search Tree::
+	3 properties needed:
+	left subtree key lesser than node's key 
+	right subtree key greater or equals to root key 
+	left and right subtree must be binary tree
