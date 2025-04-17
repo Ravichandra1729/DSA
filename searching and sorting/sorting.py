@@ -45,12 +45,30 @@ print(insertionSort(alist2))
 
 #MergeSort
 
-def MergeSort(alist):
-    
-    return alist
+def merge_sort(arr):
+    if len(arr)<=1:
+        return arr
+    mid=len(arr)//2
+    left_arr=merge_sort(arr[:mid])
+    right_arr=merge_sort(arr[mid:])
+    return merge(left_arr,right_arr)
+def merge(left,right):
+    i=j=0
+    result=[]
+    while i<len(left) and j<len(right):
+        if left[i]<right[j]:
+            result.append(left[i])
+            i+=1
+        else:
+            result.append(right[j])
+            j+=1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+arr = [6, 3, 8, 5, 2, 7, 4, 1]
+sorted_arr = merge_sort(arr)
+print("Sorted array:", sorted_arr)
 
-alist3 = [54,26,93,17,77,31,44,55,20]
-print("MergeSort:",MergeSort(alist3))
 
 
 alist4 = [54,26,93,17,77,31,44,55,20]
